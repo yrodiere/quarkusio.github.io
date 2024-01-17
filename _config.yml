@@ -36,12 +36,12 @@ search:
   # Such a high timeout is acceptable since Javascript search is almost instantaneous,
   # so when we hit the timeout the user won't experience much more delay.
   # See also https://docs.google.com/spreadsheets/d/1w0tSfL-MKFArSrB-L8IX1pxmrhWmQyNgNwQRloG3cLk/edit#gid=456110917
-  initial-timeout: 1500
+  initial-timeout: 2000
   # When fetching more pages, a timeout would be very bad for UX
   # since we would reset the whole page using Javascript --
   # while the user is reading through it!
   # This we set a higher timeout value, to make timeouts less likely.
-  more-timeout: 2500
+  more-timeout: 3000
   # The minimum number of characters before we run a full search.
   # Below this:
   # - if another filter is selected (e.g. categories), we run Javascript search
